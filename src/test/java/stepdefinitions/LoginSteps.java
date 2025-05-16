@@ -7,8 +7,6 @@ import pages.LoginPage;
 
 public class LoginSteps {
 
-    private final LoginPage loginPage = new LoginPage(BrowserDriver.getDriver());
-
     @When("User enter valid credentials")
     public void user_enter_valid_credentials() {
         loginPage.login();
