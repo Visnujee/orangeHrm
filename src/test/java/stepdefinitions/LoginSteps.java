@@ -6,10 +6,12 @@ import io.cucumber.java.en.When;
 import pages.LoginPage;
 
 public class LoginSteps {
+    LoginPage lg =new LoginPage();
+
 
     @When("User enter valid credentials")
     public void user_enter_valid_credentials() {
-        loginPage.login();
+        lg.login();
     }
 
     @Then("User should land on dashboard")
